@@ -1,0 +1,291 @@
+/* Shkyplace - Charte graphique Rose & Violet */
+:root {
+    --sp-primary: #9b59b6;
+    --sp-primary-dark: #7d3c98;
+    --sp-secondary: #e91e8c;
+    --sp-secondary-light: #f48fb1;
+    --sp-accent: #ce93d8;
+    --sp-gradient: linear-gradient(135deg, #9b59b6 0%, #e91e8c 50%, #f06292 100%);
+    --sp-gradient-soft: linear-gradient(135deg, rgba(155,89,182,0.1) 0%, rgba(233,30,140,0.1) 100%);
+    --sp-dark: #2d1b4e;
+    --sp-light: #fdf2f8;
+    --sp-white: #ffffff;
+    --sp-gray: #6b7280;
+    --sp-shadow: 0 4px 20px rgba(155, 89, 182, 0.15);
+    --sp-shadow-lg: 0 10px 40px rgba(155, 89, 182, 0.25);
+    --sp-radius: 12px;
+    --sp-radius-lg: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--sp-light);
+    color: #374151;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex: 1; }
+
+.navbar-shky {
+    background: var(--sp-gradient);
+    box-shadow: var(--sp-shadow);
+    padding: 0.75rem 0;
+}
+
+.navbar-shky .navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.navbar-shky .navbar-brand span { color: #fce4ec; }
+
+.navbar-shky .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: 8px;
+}
+
+.navbar-shky .nav-link:hover,
+.navbar-shky .nav-link.active {
+    background: rgba(255,255,255,0.2);
+    color: white !important;
+}
+
+.btn-shky {
+    background: var(--sp-gradient);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--sp-radius);
+}
+
+.btn-shky:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--sp-shadow-lg);
+}
+
+.btn-shky-outline {
+    background: transparent;
+    border: 2px solid var(--sp-primary);
+    color: var(--sp-primary);
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--sp-radius);
+}
+
+.btn-shky-outline:hover {
+    background: var(--sp-primary);
+    color: white;
+}
+
+.hero-section {
+    background: var(--sp-gradient);
+    color: white;
+    padding: 5rem 0;
+}
+
+.hero-section h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+}
+
+.card-shky {
+    border: none;
+    border-radius: var(--sp-radius-lg);
+    box-shadow: var(--sp-shadow);
+    transition: transform 0.3s;
+    background: white;
+}
+
+.card-shky:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sp-shadow-lg);
+}
+
+.card-shky .price {
+    color: var(--sp-primary-dark);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.badge-category {
+    background: var(--sp-gradient);
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: var(--sp-radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--sp-shadow);
+    border-left: 4px solid var(--sp-primary);
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--sp-primary-dark);
+}
+
+.section-title {
+    font-weight: 800;
+    color: var(--sp-dark);
+}
+
+.category-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: white;
+    border-radius: 50px;
+    box-shadow: var(--sp-shadow);
+    text-decoration: none;
+    color: var(--sp-dark);
+    font-weight: 500;
+    margin: 0.25rem;
+}
+
+.category-pill:hover {
+    background: var(--sp-gradient);
+    color: white;
+}
+
+.form-shky .form-control:focus {
+    border-color: var(--sp-primary);
+    box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.15);
+}
+
+.auth-wrapper {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.auth-card {
+    background: white;
+    border-radius: var(--sp-radius-lg);
+    box-shadow: var(--sp-shadow-lg);
+    padding: 2.5rem;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidebar {
+    background: white;
+    border-radius: var(--sp-radius-lg);
+    box-shadow: var(--sp-shadow);
+    padding: 1.5rem;
+}
+
+.sidebar .nav-link.active {
+    background: var(--sp-gradient-soft);
+    color: var(--sp-primary-dark);
+}
+
+.table-shky {
+    background: white;
+    border-radius: var(--sp-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--sp-shadow);
+}
+
+.table-shky thead {
+    background: var(--sp-gradient);
+    color: white;
+}
+
+.badge-status {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge-en_attente { background: #fef3c7; color: #92400e; }
+.badge-livree { background: #d1fae5; color: #065f46; }
+.badge-annulee { background: #fee2e2; color: #991b1b; }
+
+.progress-shky {
+    height: 12px;
+    border-radius: 10px;
+    background: #f3e8ff;
+}
+
+.progress-shky .progress-bar { background: var(--sp-gradient); }
+
+#map {
+    height: 450px;
+    border-radius: var(--sp-radius-lg);
+    box-shadow: var(--sp-shadow);
+}
+
+.footer-shky {
+    background: var(--sp-dark);
+    color: rgba(255,255,255,0.8);
+    padding: 3rem 0 1.5rem;
+    margin-top: auto;
+}
+
+.footer-shky a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+}
+
+.product-placeholder {
+    height: 180px;
+    background: var(--sp-gradient-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--sp-primary);
+}
+
+.cart-summary {
+    background: white;
+    border-radius: var(--sp-radius-lg);
+    box-shadow: var(--sp-shadow);
+    padding: 1.5rem;
+    position: sticky;
+    top: 1rem;
+}
+
+.payment-method {
+    border: 2px solid #e5e7eb;
+    border-radius: var(--sp-radius);
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.payment-method.selected {
+    border-color: var(--sp-primary);
+    background: var(--sp-gradient-soft);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--sp-gradient-soft);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: var(--sp-primary);
+    margin: 0 auto 1rem;
+}
+
+.alert-shky { border: none; border-radius: var(--sp-radius); }
